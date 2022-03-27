@@ -1,4 +1,9 @@
 class SegmentTree:
+	"""
+	Segment tree to store numbers and their segment summation.
+	The storage is 2n (first half for summation, second half for original numbers).
+	update/sumrange takes log(n)
+	"""
 
     def __init__(self, nums: List[int]):
         self.nums = nums
